@@ -1,11 +1,5 @@
-import React from "react";
+import AddressBookLanding from "../components/AddressBookLanding"
 
-const App = () => {
-  return (
-    <div className="text-red-500">
-      <h1>hello</h1>
-    </div>
-  );
-};
-
-export default App;
+export default function Page() {
+  return <AddressBookLanding />
+}
