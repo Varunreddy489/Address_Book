@@ -3,6 +3,7 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
+import { Link } from "react-router-dom";
 
 export default function LoginForm() {
   const [formData, setFormData] = useState({
@@ -128,9 +129,9 @@ export default function LoginForm() {
         <div className="text-center mt-6">
           <p className="text-sm text-gray-600">
             Don't have an account?{" "}
-            <a href="#" className="text-primary font-medium hover:underline">
+            <Link to="/sign-up" className="text-primary font-medium hover:underline">
               Sign up
-            </a>
+            </Link>
           </p>
         </div>
       </form>

@@ -1,6 +1,7 @@
 import { Book } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import NavLink from "./NavLink"
+import { Link  } from "react-router-dom"
 
 export default function Navbar({ scrolled }) {
   const scrollToLogin = () => {
@@ -27,7 +28,7 @@ export default function Navbar({ scrolled }) {
         </div>
         <div className="flex items-center gap-4">
           <Button variant="outline" size="sm">
-          <a onClick={scrollToLogin} >Sign Up</a>
+          <Link to="/sign-up" >Sign Up</Link>
           </Button>
           <Button asChild size="sm"><a onClick={scrollToLogin}>Login</a></Button>
         </div>
